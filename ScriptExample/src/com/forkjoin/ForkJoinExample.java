@@ -36,7 +36,7 @@ class Fibonacci extends RecursiveTask<Integer> {
 				f1.fork();
 				return f2.compute() + f1.join();
 			} else {
-				return fib(s - 1) + fib(s - 2);
+				return fib(s);
 			}
 
 		}
